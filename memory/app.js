@@ -54,8 +54,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     ];
     
 
-    // cardArray.sort(() => 0.5 - Math.random())
-    console.log(0.5-Math.random())
+    cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
     const resultDisplay = document.querySelector('#result')
@@ -94,17 +93,17 @@ document.addEventListener('DOMContentLoaded', () =>{
         var cards = document.querySelectorAll('img')
         const option1 = cardChosenId[0]
         const option2 = cardChosenId[1]
-        if(cardChosen[0] === cardChosen[1]){
+        if(option1 == option2){
+            cards[option1].setAttribute('src','images/blank.png')
+            cards[option2].setAttribute('src','images/blank.png')
+            alert('You click the same image!')
+        }else if ( cardChosen[0] === cardChosen[1]){
             alert('Good you have a match')
             cards[option1].setAttribute('src','images/white.png')
             cards[option2].setAttribute('src','images/white.png')
             cards[option1].removeEventListener('click',flipCard)
             cards[option2].removeEventListener('click',flipCard)
             cardWon.push(cardChosen)
-        }else if (option1 == option2){
-            cards[option1].setAttribute('src','images/blank.png')
-            cards[option2].setAttribute('src','images/blank.png')
-            alert('You click the same image!')
         }else{
             cards[option1].setAttribute('src','images/blank.png')
             cards[option2].setAttribute('src','images/blank.png')
