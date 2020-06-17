@@ -12,8 +12,16 @@ function start() {
 		(function (index) {
 			// add an onclick to each square in your grid
 			squares[i].onclick = function () {
+				// if the square below your current square is not taken or if other player already took the square, you can't go here
+				if (
+					!squares[index + 7].classList.contains("taken") ||
+					squares[index].classList.contains("player-one") ||
+					squares[index].classList.contains("player-two")
+				) {
+					alert("can't go here");
+				}
 				// if the square below your current square is taken you can go ontop of it
-				if (squares[index + 7].classList.contains("taken")) {
+				else if (squares[index + 7].classList.contains("taken")) {
 					if (currentPlayer === 1) {
 						squares[index].classList.add("taken");
 						squares[index].classList.add("player-one");
@@ -27,10 +35,6 @@ function start() {
 						currentPlayer = 1;
 						displayCurrentPlayer.innerHTML = currentPlayer;
 					}
-				}
-				// if the square below your current square is not taken, you can't go here
-				else {
-					alert("can't go here");
 				}
 			};
 		})(i);
