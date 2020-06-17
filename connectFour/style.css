@@ -1,22 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Sriracha", cursive;
+}
+body {
+	background-color: #2d3436;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23636e72' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.game {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.game h1 {
+	font-size: 4em;
+	text-transform: capitalize;
+	color: #ff7675;
+}
+.game h3 {
+	font-size: 2.4em;
+	color: #fab1a0;
+}
+
+#current-player,
+#player {
+    font-size: 2.6rem;
+    color: #ff7675;
+}
 .grid {
-    border: 1px solid;
-    display: flex;
-    flex-wrap: wrap;
-    height: 120px;
-    width: 140px;
-  }
-  
-  .grid div {
-    height: 20px;
-    width: 20px;
-  }
+	border: 1px solid white;
+	display: flex;
+	flex-wrap: wrap;
+	height: 365px;
+    width: 425px;
+    background-color: #2d3436;
+}
 
-  .player-one {
-    background-color: red;
-    border-radius: 10px;
-  }
+.grid div {
+	height: 60px;
+    width: 60px;
+}
 
-  .player-two {
-    background-color: blue;
-    border-radius: 10px;
-  }
+.player-one {
+	background-color: #0984e3;
+	border-radius: 10px;
+}
+
+.player-two {
+	background-color: #00cec9;
+	border-radius: 10px;
+}
