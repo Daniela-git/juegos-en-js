@@ -34,14 +34,14 @@ body {
 	border: 1px solid white;
 	display: flex;
 	flex-wrap: wrap;
-	height: 365px;
-    width: 425px;
+	height: 22.8125em;
+    width: 26.5625em;
     background-color: #2d3436;
 }
 
 .grid div {
-	height: 60px;
-    width: 60px;
+	height: 3.75em;
+    width: 3.75em;
 }
 h4{
     color:white;
@@ -56,4 +56,19 @@ h4{
 .player-two {
 	background-color: #00cec9;
 	border-radius: 10px;
+}
+
+@media (max-width:1200px){
+
+}
+@media (max-width:992px){
+
+}
+@media (max-width:768px){
+
+}
+@media (max-width:576px){
+	body{
+		font-size: 13px;
+	}
 }
