@@ -9,8 +9,7 @@ Para probar cada uno de los juegos se puede ingresar sus links correspondientes:
 [https://daniela-git.github.io/juegos-en-js/memory](https://daniela-git.github.io/juegos-en-js/memory)
 
 ### Golpear al Topo:
-[https://daniela-git.github.io/juegos-en-js/whack%20a%20mole/](https://daniela-git.github.io/juegos-en-js/whack%20a%20mole/)
+[https://daniela-git.github.io/juegos-en-js/whack%20a%20mole/](https://daniela-git.github.io/juegos-en-js/whack%20a%20mole)
 
 ### Conecta cuatro:
-[https://daniela-git.github.io/juegos-en-js/connectFour](https://daniela-git.github.io/juegos-en-js/connectFour
-)
+[https://daniela-git.github.io/juegos-en-js/connectFour](https://daniela-git.github.io/juegos-en-js/connectFour)
