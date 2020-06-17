@@ -128,7 +128,7 @@ function start() {
 				square4.classList.contains("player-one")
 			) {
 				// if they do, player-one is passes as the winner
-				result.innerHTML = "Player One Wins";
+                result.innerHTML = "Player One Wins";
 			}
 			// check for player two
 			else if (
