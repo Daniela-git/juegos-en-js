@@ -1,40 +1,71 @@
-* {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
+/*------------------
+	font family
+-------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
+
 body {
 	font-size: 16px;
+	font-family: "Balsamiq Sans", cursive;
 	background-color: #fcfcfc;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%233dd9ac' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 .container {
-	/* width: 90vw; */
-	/* margin: auto;
-	text-align: center; */
-
+	width: 90vw;
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
 }
-
+h1 {
+	font-size: 3em;
+	margin-bottom: 5px;
+}
 .grid {
-	width: 200px;
-	height: 200px;
+	width: 500px;
+	height: 500px;
 	display: flex;
 	flex-wrap: wrap;
 	border-style: solid;
+	margin: auto;
 	background-color: #fcfcfccb;
 }
 
 .grid div {
-	width: 20px;
-	height: 20px;
+	width: 50px;
+	height: 50px;
 }
 .start {
-	background-color: ;
+	background-color: black;
+	color: #7beead;
+	border: 1px solid transparent;
+	height: 1.8em;
+	border-radius: 4px;
+	text-transform: capitalize;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.score {
+	font-size: 1.5em;
 }
 .snake {
 	background-color: #7beead;
 }
+.snake.lose {
+	background-color: #37a065;
+	animation: lose 0.5s infinite;
+}
+@keyframes lose {
+	from {
+		transform: scale(.8);
+	}
+	to {
+		transform: scale(1);
+	}
+}
 
 .apple {
-	background-color: #d65251;
+	background-image: url("apple.png");
+	background-size: cover;
+	background-position: center;
 }

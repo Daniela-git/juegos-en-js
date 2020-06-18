@@ -18,8 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	// to start and restar the game
 	function startGame() {
 		// reinicia todas las clases
-		currentSnake.forEach((index) =>
+		currentSnake.forEach((index) =>{
 			squares[index].classList.remove("snake")
+			squares[index].classList.remove("lose")
+		}
 		);
 		squares[appleIndex].classList.remove("apple");
 		clearInterval(interval);
@@ -44,6 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			(currentSnake[0] - width < 0 && direction === -width) ||
 			squares[currentSnake[0] + direction].classList.contains("snake") //golpea ella misma
 		) {
+			currentSnake.forEach((index)=>{
+				squares[index].classList.add('lose')
+			})
 			return clearInterval(interval); //limpia el interval si cualquiera pasa
 		}
 
