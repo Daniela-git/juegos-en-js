@@ -15,4 +15,4 @@ Para probar cada uno de los juegos se puede ingresar sus links correspondientes:
 [https://daniela-git.github.io/juegos-en-js/connectFour](https://daniela-git.github.io/juegos-en-js/connectFour)
 
 ### Snake:
-[https://daniela-git.github.io/juegos-en-js/snake](https://daniela-git.github.io/juegos-en-js/snake
+[https://daniela-git.github.io/juegos-en-js/snake](https://daniela-git.github.io/juegos-en-js/snake)
