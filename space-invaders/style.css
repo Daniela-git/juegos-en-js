@@ -11,16 +11,17 @@
 }
 
 .shooter{
-    background-color: blue;
+    background-image: url('spaceship.svg');
 }
 .invader{
-    background-color: purple;
-    border-radius: 10px;
+    background-image: url('spaceship.png');
+    /* background-color: purple; */
 }
 
 .boom{
-    background-color: red;
+    border-radius: 10px;
+    background-color: rgb(214, 124, 124);
 }
 .laser{
-    background-color: orange;
+    background-image: url('bullet.svg');
 }
