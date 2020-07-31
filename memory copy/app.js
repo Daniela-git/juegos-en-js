@@ -129,8 +129,8 @@ document.addEventListener('DOMContentLoaded', () =>{
         const option1 = cardChosenId[0]
         const option2 = cardChosenId[1]
         if(option1 == option2){
-            cards[option1].setAttribute('src','images/blank.png')
-            cards[option2].setAttribute('src','images/blank.png')
+            cards[option1].setAttribute('src',`images/numbers/${Number(option1)+1}.png`)
+            cards[option2].setAttribute('src',`images/numbers/${Number(option2)+1}.png`)
             alert('You click the same image!')
         }else if ( cardChosen[0] === cardChosen[1]){
             // alert('Good you have a match')
@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () =>{
             cards[option2].removeEventListener('click',flipCard)
             cardWon.push(cardChosen)
         }else{
-            cards[option1].setAttribute('src','images/blank.png')
-            cards[option2].setAttribute('src','images/blank.png')
+            cards[option1].setAttribute('src',`images/numbers/${Number(option1)+1}.png`)
+            cards[option2].setAttribute('src',`images/numbers/${Number(option2)+1}.png`)
             
 
         }
