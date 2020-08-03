@@ -14,8 +14,8 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 30rem;
-	height: 18.75rem;
+	width: 480px;
+	/* height: 18.75rem; */
 	border-radius: 0.25rem;
 }
 .grid img {
