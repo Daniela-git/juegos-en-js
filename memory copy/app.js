@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		// con este this a la etiqueta img le pasamos la imagen que corresponde a ese data-id en el array con todas las cartas
 		this.setAttribute("src", cardArray[cardId].img);
 		if (cardChosen.length === 2) {
-			setTimeout(checkForMatch, 500);
+			setTimeout(checkForMatch, 1000);
 		}
 	}
 
